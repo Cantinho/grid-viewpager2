@@ -2,7 +2,9 @@ package br.com.cantinho.gridviewpager2
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.core.view.get
 import br.com.cantinho.gridviewpager2.adapter.CategoryAdapter
+import br.com.cantinho.gridviewpager2.model.CategoryContainer
 import br.com.cantinho.gridviewpager2.util.DataMockGenerator
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -18,6 +20,4 @@ class MainActivity : AppCompatActivity() {
         viewPager2.adapter = adapter
         adapter.setItem(DataMockGenerator.generateCategories())
     }
-
-
 }

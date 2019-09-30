@@ -6,13 +6,15 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import br.com.cantinho.gridviewpager2.R
 import br.com.cantinho.gridviewpager2.model.Category
+import br.com.cantinho.gridviewpager2.model.CategoryContainer
 import kotlinx.android.synthetic.main.item_category.view.*
 
-class CategoryViewHolder constructor(itemView: View) :
+open class CategoryContainerViewHolder constructor(itemView: View) :
     RecyclerView.ViewHolder(itemView) {
     constructor(parent: ViewGroup) :
-            this(LayoutInflater.from(parent.context).inflate(R.layout.item_category, parent, false))
-    fun bind(category: Category) {
-        itemView.tvCategoryName.text = category.name
+            this(LayoutInflater.from(parent.context).inflate(R.layout.item_category_container_1x1, parent, false))
+
+    open fun bind(categoryContainer: CategoryContainer) {
+        // It will be overrided
     }
 }
