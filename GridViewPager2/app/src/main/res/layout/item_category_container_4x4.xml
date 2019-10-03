@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="8dp"
+    android:background="@color/colorAccent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item01"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorA"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="A"
+        android:textColor="@android:color/white"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/item05"
+        app:layout_constraintEnd_toStartOf="@+id/item02"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item02"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="B"
+        android:background="@color/colorB"
+        android:textColor="@android:color/white"
+        android:textSize="50sp"
+        android:gravity="center_horizontal|center_vertical"
+        app:layout_constraintBottom_toTopOf="@+id/item06"
+        app:layout_constraintEnd_toStartOf="@+id/item03"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/item01"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item03"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="C"
+        android:background="@color/colorC"
+        android:textColor="@android:color/white"
+        android:textSize="50sp"
+        android:gravity="center_horizontal|center_vertical"
+        app:layout_constraintBottom_toTopOf="@+id/item07"
+        app:layout_constraintEnd_toStartOf="@+id/item04"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/item02"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item04"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorD"
+        android:text="D"
+        android:textColor="@android:color/white"
+        android:textSize="50sp"
+        android:gravity="center_horizontal|center_vertical"
+        app:layout_constraintBottom_toTopOf="@+id/item08"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/item03"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item05"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorE"
+        android:text="E"
+        android:textColor="@android:color/white"
+        android:textSize="50sp"
+        android:gravity="center_horizontal|center_vertical"
+        app:layout_constraintBottom_toTopOf="@+id/item09"
+        app:layout_constraintEnd_toStartOf="@+id/item06"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item01" />
+
+    <TextView
+        android:id="@+id/item06"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorF"
+        android:text="F"
+        android:textColor="@android:color/white"
+        android:textSize="50sp"
+        android:gravity="center_horizontal|center_vertical"
+        app:layout_constraintBottom_toTopOf="@+id/item10"
+        app:layout_constraintEnd_toStartOf="@+id/item07"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/item05"
+        app:layout_constraintTop_toBottomOf="@+id/item02" />
+
+    <TextView
+        android:id="@+id/item07"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorG"
+        android:text="G"
+        android:textColor="@android:color/white"
+        android:textSize="50sp"
+        android:gravity="center_horizontal|center_vertical"
+        app:layout_constraintBottom_toTopOf="@+id/item11"
+        app:layout_constraintEnd_toStartOf="@+id/item08"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/item06"
+        app:layout_constraintTop_toBottomOf="@+id/item03" />
+
+    <TextView
+        android:id="@+id/item08"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorH"
+        android:text="H"
+        android:textColor="@android:color/white"
+        android:textSize="50sp"
+        android:gravity="center_horizontal|center_vertical"
+        app:layout_constraintBottom_toTopOf="@+id/item12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/item07"
+        app:layout_constraintTop_toBottomOf="@+id/item04" />
+
+    <TextView
+        android:id="@+id/item09"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorI"
+        android:text="I"
+        android:textColor="@android:color/white"
+        android:textSize="50sp"
+        android:gravity="center_horizontal|center_vertical"
+        app:layout_constraintBottom_toTopOf="@+id/item13"
+        app:layout_constraintEnd_toStartOf="@+id/item10"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item05" />
+
+    <TextView
+        android:id="@+id/item10"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorJ"
+        android:text="J"
+        android:textColor="@android:color/white"
+        android:textSize="50sp"
+        android:gravity="center_horizontal|center_vertical"
+        app:layout_constraintBottom_toTopOf="@+id/item14"
+        app:layout_constraintEnd_toStartOf="@+id/item11"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/item09"
+        app:layout_constraintTop_toBottomOf="@+id/item06" />
+
+    <TextView
+        android:id="@+id/item11"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorK"
+        android:text="K"
+        android:textColor="@android:color/white"
+        android:textSize="50sp"
+        android:gravity="center_horizontal|center_vertical"
+        app:layout_constraintBottom_toTopOf="@+id/item15"
+        app:layout_constraintEnd_toStartOf="@+id/item12"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/item10"
+        app:layout_constraintTop_toBottomOf="@+id/item07" />
+
+    <TextView
+        android:id="@+id/item12"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorL"
+        android:text="L"
+        android:textColor="@android:color/white"
+        android:textSize="50sp"
+        android:gravity="center_horizontal|center_vertical"
+        app:layout_constraintBottom_toTopOf="@+id/item16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/item11"
+        app:layout_constraintTop_toBottomOf="@+id/item08" />
+
+    <TextView
+        android:id="@+id/item13"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorM"
+        android:text="M"
+        android:textColor="@android:color/white"
+        android:textSize="50sp"
+        android:gravity="center_horizontal|center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/item14"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item09" />
+
+    <TextView
+        android:id="@+id/item14"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorN"
+        android:text="N"
+        android:textColor="@android:color/white"
+        android:textSize="50sp"
+        android:gravity="center_horizontal|center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/item15"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/item13"
+        app:layout_constraintTop_toBottomOf="@+id/item10" />
+
+    <TextView
+        android:id="@+id/item15"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorO"
+        android:text="O"
+        android:textColor="@android:color/white"
+        android:textSize="50sp"
+        android:gravity="center_horizontal|center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/item16"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/item14"
+        app:layout_constraintTop_toBottomOf="@+id/item11" />
+
+    <TextView
+        android:id="@+id/item16"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorP"
+        android:text="P"
+        android:textColor="@android:color/white"
+        android:textSize="50sp"
+        android:gravity="center_horizontal|center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/item15"
+        app:layout_constraintTop_toBottomOf="@+id/item12" />
+</androidx.constraintlayout.widget.ConstraintLayout>
