@@ -10,10 +10,10 @@ import kotlin.math.ceil
 class CategoryAdapter : RecyclerView.Adapter<CategoryContainerViewHolder>() {
 
     companion object {
-        private const val VIEW_TYPE_1X1_CONTAINER = 1
-        private const val VIEW_TYPE_2X2_CONTAINER = 2
-        private const val VIEW_TYPE_3X3_CONTAINER = 3
-        private const val VIEW_TYPE_4X4_CONTAINER = 4
+        const val VIEW_TYPE_1X1_CONTAINER = 1
+        const val VIEW_TYPE_2X2_CONTAINER = 2
+        const val VIEW_TYPE_3X3_CONTAINER = 3
+        const val VIEW_TYPE_4X4_CONTAINER = 4
     }
 
     private var containerType = VIEW_TYPE_2X2_CONTAINER
@@ -48,7 +48,7 @@ class CategoryAdapter : RecyclerView.Adapter<CategoryContainerViewHolder>() {
             val categories = mutableListOf<Category>()
             for(e in 0 until containerType*containerType) {
                 if(categoryCounter < list.size) {
-                    categories.add(list[i])
+                    categories.add(list[categoryCounter])
                 } else {
                     categories.add(Category(id = i, name = "N:$categoryCounter", isEmpty = true))
                 }
