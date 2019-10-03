@@ -48,7 +48,7 @@ class CategoryAdapter : RecyclerView.Adapter<CategoryContainerViewHolder>() {
             val categories = mutableListOf<Category>()
             for(e in 0 until containerType*containerType) {
                 if(categoryCounter < list.size) {
-                    categories.add(Category(id = i, name = "N:$categoryCounter"))
+                    categories.add(list[i])
                 } else {
                     categories.add(Category(id = i, name = "N:$categoryCounter", isEmpty = true))
                 }
@@ -58,7 +58,7 @@ class CategoryAdapter : RecyclerView.Adapter<CategoryContainerViewHolder>() {
         }
     }
 
-    fun changeContainerType(type: Int) {
+    fun setContainerType(type: Int) {
         containerType = when(type) {
             VIEW_TYPE_1X1_CONTAINER -> VIEW_TYPE_1X1_CONTAINER
             VIEW_TYPE_2X2_CONTAINER -> VIEW_TYPE_2X2_CONTAINER

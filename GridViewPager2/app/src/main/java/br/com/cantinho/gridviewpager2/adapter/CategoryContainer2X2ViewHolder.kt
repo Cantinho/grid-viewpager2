@@ -3,9 +3,11 @@ package br.com.cantinho.gridviewpager2.adapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import br.com.cantinho.gridviewpager2.R
 import br.com.cantinho.gridviewpager2.model.CategoryContainer
 import br.com.cantinho.gridviewpager2.model.nameIfNotEmpty
+import br.com.cantinho.gridviewpager2.util.asSequence
 import kotlinx.android.synthetic.main.item_category_container_2x2.view.*
 
 class CategoryContainer2X2ViewHolder constructor(itemView: View) :
@@ -13,10 +15,18 @@ class CategoryContainer2X2ViewHolder constructor(itemView: View) :
     constructor(parent: ViewGroup) :
             this(LayoutInflater.from(parent.context).inflate(R.layout.item_category_container_2x2, parent, false))
 
+    /**
+     * All ViewGroup's child items must be in expected order in xml file. Otherwise,
+     * a map implementation must be implemented to run as expected.
+     */
+    private val ViewGroup.views: List<View>
+        get() = asSequence().toList()
+
     override fun bind(categoryContainer: CategoryContainer) {
-        itemView.item01.text = categoryContainer.categories[0].nameIfNotEmpty()
-        itemView.item02.text = categoryContainer.categories[1].nameIfNotEmpty()
-        itemView.item03.text = categoryContainer.categories[2].nameIfNotEmpty()
-        itemView.item04.text = categoryContainer.categories[3].nameIfNotEmpty()
+        itemView.container.views.forEachIndexed { index, view ->
+            if(view is TextView && index < categoryContainer.size()) {
+                view.text = categoryContainer.categoryAt(index).nameIfNotEmpty()
+            }
+        }
     }
 }
