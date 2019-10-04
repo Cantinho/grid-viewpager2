@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">GridViewPager2</string>
+    <string name="btn1x1">1X1</string>
+    <string name="btn2x2">2X2</string>
+    <string name="btn3x3">3X3</string>
+    <string name="btn4x4">4X4</string>
 </resources>
